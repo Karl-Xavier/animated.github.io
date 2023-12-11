@@ -2,7 +2,7 @@ if (document.readyState == 'loading') {
     document.addEventListener('DOMContentLoaded', ready)
 } else {
     ready()
-}
+} 
 
 function ready() {
 
@@ -80,7 +80,7 @@ function addItemToCart(title, prices, imageSrc) {
         <img class="img image" src="${imageSrc}" height="180" width="180" style="border-radius: 10px;">
         <span class="cart-item-title" style="font-weight: bold;">${title}</span>
     </div>
-    <span class="cart-price cart-column">${prices}</span>
+    <span class="cart-price cart-column price">${prices}</span>
     <div class="cart-quantity cart-column">
         <input type="number" value="1" class="cart-quantity-input">
         <button class="btn btn-danger" type="button">REMOVE</button>
